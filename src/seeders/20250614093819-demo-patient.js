@@ -12,8 +12,8 @@ module.exports = {
       address: 'Village Kheda, District Betul, MP',
       gps_coordinates: '22.15,78.11',
       asha_id: 'ASHA_001',
-      created_at: new Date(),
-      updated_at: new Date()
+      createdAt: new Date(),
+      updatedAt: new Date()
     }], {});
   },
 

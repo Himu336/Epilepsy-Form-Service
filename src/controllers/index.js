@@ -1,3 +1,4 @@
 module.exports = {
-    infoController: require("./info-controller")
+    infoController: require("./info-controller"),
+    ChecklistController: require("./checklist-controller")
 }

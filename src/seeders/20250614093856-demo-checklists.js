@@ -42,8 +42,8 @@ module.exports = {
         document_urls: 'https://s3.link/doc1.pdf, https://s3.link/doc2.pdf',
         timestamp_annotation: '2024-06-11 09:13:00 | 22.15, 78.11',
         consent_given: true,
-        created_at: new Date(),
-        updated_at: new Date()
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {});
   },

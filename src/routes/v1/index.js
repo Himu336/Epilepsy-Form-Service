@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const { infoController } = require("../../controllers");
+const checklistRoutes = require('./checklist-routes');
 
-router.get('/info', infoController.info);
+router.use('/checklists', checklistRoutes);
 
 module.exports = router;
