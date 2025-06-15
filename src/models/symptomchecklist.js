@@ -11,13 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      SymptomChecklist.associate = function(models) {
-        SymptomChecklist.belongsTo(models.Patient, {
-          foreignKey: 'patient_id',
-          onDelete: 'CASCADE'
-        });
-      };
-      
+      SymptomChecklist.belongsTo(models.Patient, {
+        foreignKey: 'patient_id',
+        onDelete: 'CASCADE'
+      });
     }
   }
   SymptomChecklist.init({

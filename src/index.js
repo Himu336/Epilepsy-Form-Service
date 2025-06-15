@@ -15,16 +15,9 @@ app.use((req, res, next) => {
   next();
 });
 
+
 app.use('/api', routes);
 
-// Catch-all POST handler for unhandled routes
-app.post('*', (req, res) => {
-  console.warn(`[${new Date().toISOString()}] 404: Unhandled POST request to: ${req.originalUrl}`);
-  res.status(404).json({
-    success: false,
-    message: `No POST route found for ${req.originalUrl}. Please check the URL and method.`
-  });
-});
 
 const PORT = process.env.PORT || 3000;
 
