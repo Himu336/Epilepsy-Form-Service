@@ -2,8 +2,12 @@ const { ChecklistService } = require('../services');
 
 const createChecklist = async (req, res) => {
   try {
-    const checklist = await ChecklistService.createChecklist(req.body);
-    return res.status(201).json({ success: true, data: checklist });
+    const result = await ChecklistService.createChecklist(req.body);
+    if (result.success) {
+      return res.status(201).json(result);
+    } else {
+      return res.status(400).json(result);
+    }
   } catch (err) {
     return res.status(500).json({ success: false, error: err.message });
   }
