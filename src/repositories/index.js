@@ -1,3 +1,5 @@
+
+
 module.exports = {
-  ChecklistRepository: require("./checlist-repository")
+  ChecklistRepository: require("./checlist-repository"),
 };
